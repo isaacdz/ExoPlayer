@@ -411,6 +411,7 @@ public class AdaptiveTrackSelection extends BaseTrackSelection {
     int idealSelectedIndex = determineIdealSelectedIndex(nowMs, getLastChunkDurationUs(queue));
     Format idealFormat = getFormat(idealSelectedIndex);
     // If the chunks contain video, discard from the first SD chunk beyond
+    //just a test
     // minDurationToRetainAfterDiscardUs whose resolution and bitrate are both lower than the ideal
     // track.
     for (int i = 0; i < queueSize; i++) {
